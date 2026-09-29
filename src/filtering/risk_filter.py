@@ -25,8 +25,8 @@ def is_accepted_risk(row):
                 status
             FROM accepted_risks
             WHERE status = 'ACTIVE'
-              AND start_date <= %s
-              AND end_date >= %s
+            AND start_date <= %s
+            AND end_date >= %s
             """,
             (date.today(), date.today())
         )
